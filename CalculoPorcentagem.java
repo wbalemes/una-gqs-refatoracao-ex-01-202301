@@ -5,15 +5,15 @@ public class CalculoPorcentagem {
       pessoa.orientacaoFinal = "Você ficará sob observação por 05 dias.";
     }
 
-    if (pessoa.cartaoVacinaEmDia.equals("NAO")) {
+    else if (pessoa.cartaoVacinaEmDia.equals("NAO")) {
       pessoa.porcentagemInfeccao += 100;
     }
 
-    if (pessoa.teveSintomasRecentemente.equals("SIM")) {
+    else if (pessoa.teveSintomasRecentemente.equals("SIM")) {
       pessoa.porcentagemInfeccao += 300;
     }
 
-    if (pessoa.teveContatoComPessoasSintomaticas.equals("SIM")) {
+    else if (pessoa.teveContatoComPessoasSintomaticas.equals("SIM")) {
       pessoa.porcentagemInfeccao += 300;
     }
   }
