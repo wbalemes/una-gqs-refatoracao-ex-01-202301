@@ -6,15 +6,15 @@ public class CalculoPorcentagem {
     }
 
     else if (pessoa.cartaoVacinaEmDia.equals("NAO")) {
-      pessoa.porcentagemInfeccao += 100;
+      pessoa.porcentagemInfeccao += 10;
     }
 
     else if (pessoa.teveSintomasRecentemente.equals("SIM")) {
-      pessoa.porcentagemInfeccao += 300;
+      pessoa.porcentagemInfeccao += 30;
     }
 
     else if (pessoa.teveContatoComPessoasSintomaticas.equals("SIM")) {
-      pessoa.porcentagemInfeccao += 300;
+      pessoa.porcentagemInfeccao += 30;
     }
   }
 }
